@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI图像生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI图像生成器</h1>
+            <p>输入描述，生成你的专属图像</p>
+        </header>
+        
+        <div class="generator-container">
+            <div class="input-section">
+                <textarea id="prompt-input" placeholder="描述你想生成的图像..."></textarea>
+                <button id="generate-btn">生成图像</button>
+            </div>
+            
+            <div class="output-section">
+                <div class="image-placeholder" id="image-result">
+                    <p>生成的图像将显示在这里</p>
+                </div>
+                <div class="controls">
+                    <button id="download-btn" disabled>下载图像</button>
+                    <button id="clear-btn">清除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
